@@ -1,0 +1,25 @@
+/* Este programa é para gerar os número aleatórios para MegaSena */
+#include<stdio.h> // para entrada e saida
+#include<stdlib.h> // para comando system("pause")
+#include<time.h> // para gerar números aleatórios
+
+int main (){
+    
+    int num; // receber um número aleatório para MegaSena
+    int cont; // um contador
+    
+    srand(time(NULL)); // semente para gerar a sequencia de números diferente
+    printf("Seis números gerados da MegaSena\n");
+    printf("\n");
+    cont = 1;
+    while(cont <= 6){
+               num = rand()%60 + 1;  // rand () %60 --> gerar número aleatório entre 0 a 59;
+               printf("%d\n", num);
+               cont++;
+               }
+    printf("\n");
+    
+           
+    system("pause");
+    return 0;
+    }
