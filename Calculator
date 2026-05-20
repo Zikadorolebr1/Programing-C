@@ -1,0 +1,61 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+
+/* Este programa é para criar um calculadora simples 
+   com 4 operações básica: somar, subtrair, multiplicar, dividir */
+
+int main (){
+    
+    int num1, num2, opcao; //entrada de dados
+    int resultado
+    float result_div; //saida de dados
+    
+    printf("-------CALCULADORA EM C-------");
+    
+    printf("1 - Soma");
+    printf("2 - Subtração");
+    printf("3 - Multiplicação");
+    printf("4 - Divisão");
+    
+    printf("Digite o valor para ser usado na operação escolhida: ");
+    scanf("%d", &num1);
+    
+    printf("Digite o valor para ser usado na operação escolhida: ");
+    scanf("%d", &num2);
+    
+    printf("Escolha uma operação para o cálculo: ");
+    scanf("%d", &opcao);
+    
+    switch(opcao){
+                case 1: 
+                     resultado = num1 + num2;
+                     printf("Resultado da soma = %d\n", resultado;
+                     break;
+                     
+                case 2:
+                      resultado = num1 - num2;
+                      printf("Resultado da subtração = %d\n", resultado;
+                      break;
+                      
+                case 3: 
+                     resultado = num1 * num2;
+                     printf("Resultado da multiplicação = %d\n", resultado;
+                     break;
+                     
+                case 4: 
+                     result_div = (float) num1 / num2
+                     printf("Resultado da divisão =  %.2f\n", resul_div;
+                     break;
+                     
+                default:
+                        printf("Você digitiou uma opção inválida!\n";
+                        break;
+                        
+                        
+                }
+    printf("Fim do programa!!!\n")
+    
+    system ("pause");
+    return 0;
+    }
