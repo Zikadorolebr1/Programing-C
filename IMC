@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+    float altura, peso; // Entrada de dados
+    float IMC;    // Saída de dados
+    
+    printf("Informe sua altura (kg): ");
+    scanf("%f", &peso);
+    
+    printf("Informe sua peso (m): ");
+    scanf("%f", &altura);
+    
+    IMC = peso/(altura*altura);
+    
+    printf("Seu IMC é = %2.f\n", IMC);
+    
+    system("pause");
+    return 0;
+    }
