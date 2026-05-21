@@ -1,0 +1,17 @@
+include <stdio.h> //Incluir a biblioteca padrão de entrada e saída 
+#include <stdlib.h> //Incluir a biblioteca para usar comando "system("pause")"
+//Estrutura C: programa principal
+int main(){
+    int idade;
+    float salario;
+    //Comando printf(....) é um comando de saída|*/
+    printf("Qual é sua idade? \n");
+    // Sempre usamos o comando scanf(...) é um comando de entrado
+    scanf("%d",&idade);//Sempre utilizamos o & chamamamos de "Operador de endereço"
+    prinf("Minha idade é: &d anos \n", idade);
+    printf("Qual é o seu salário? \n");
+    scanf("%f",&salario);
+    print("O valor do meu salário é %.2f \n", salario);
+    system("pause");
+    return 0;
+}
