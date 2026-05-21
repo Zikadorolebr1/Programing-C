@@ -1,0 +1,62 @@
+int main()
+{
+{
+    char nome{100};
+    float valor = {10.0};
+    float total;
+    int ingresso;
+    int num1, num2, num3, num4, valor_total;
+
+    printf("Digite o seu nome: ");
+    scanf("%s, nome");
+
+    prinf("Insira a quantidade de ingressos que serão comprados: ");
+    scanf("%d, &ingressos");
+
+    prinf("Digite os valores: ( num1, num2, num3, num4 ): \n");
+    scanf("%d, num1");
+    scanf("%d, num2");
+    scanf("%d, num3");
+    scanf("%d, num4");
+
+    valor_final = num1 + num2 + num3 + num4;
+
+      printf("Insira a quantidade total de ingressos: ");
+    scanf("%f", &total);
+
+    if (num1 == 1) {
+        printf("Nenhum desconto aplicado\n");
+    } 
+    else {
+        if (num2 == 2) {
+            valor_final = valor * 0.05;
+            printf("Desconto aplicado!\n");
+        }
+
+        if (num3 == 3) {
+            valor_final = valor * 0.10;
+        }
+
+        if (num4 == 4) {
+            valor_final = valor * 0.15;
+        }
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
